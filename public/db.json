@@ -1,0 +1,63 @@
+[
+  {
+    "_id": "662801976eb14ff85683595b",
+    "weekly_goals": {
+      "sunday": {
+        "activity_goal": "5000 steps",
+        "daily_goal": "8 hours of sleep",
+        "steps": 5500,
+        "distance": "4.5 km",
+        "sleep": "8.5 hours",
+        "energy_consumption": "2000 kcal"
+      },
+      "monday": {
+        "activity_goal": "6000 steps",
+        "daily_goal": "7 hours of sleep",
+        "steps": 6200,
+        "distance": "5.2 km",
+        "sleep": "7 hours",
+        "energy_consumption": "1900 kcal"
+      },
+      "tuesday": {
+        "activity_goal": "7000 steps",
+        "daily_goal": "8 hours of sleep",
+        "steps": 7200,
+        "distance": "6.1 km",
+        "sleep": "8 hours",
+        "energy_consumption": "2100 kcal"
+      },
+      "wednesday": {
+        "activity_goal": "5500 steps",
+        "daily_goal": "7.5 hours of sleep",
+        "steps": 5800,
+        "distance": "4.8 km",
+        "sleep": "7.5 hours",
+        "energy_consumption": "1950 kcal"
+      },
+      "thursday": {
+        "activity_goal": "6500 steps",
+        "daily_goal": "8 hours of sleep",
+        "steps": 6700,
+        "distance": "5.6 km",
+        "sleep": "8 hours",
+        "energy_consumption": "2050 kcal"
+      },
+      "friday": {
+        "activity_goal": "7500 steps",
+        "daily_goal": "7.5 hours of sleep",
+        "steps": 7800,
+        "distance": "6.8 km",
+        "sleep": "7.5 hours",
+        "energy_consumption": "2200 kcal"
+      },
+      "saturday": {
+        "activity_goal": "8000 steps",
+        "daily_goal": "8 hours of sleep",
+        "steps": 8200,
+        "distance": "7.2 km",
+        "sleep": "8 hours",
+        "energy_consumption": "2300 kcal"
+      }
+    }
+  }
+]

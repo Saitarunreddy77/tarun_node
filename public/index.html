@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr,2fr;
+    grid-template-areas: 
+        "header"
+        "about"
+        "education"
+        "projects"
+        "experience"
+        "blogs"
+        "contact";
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#about { 
+    grid-area: about; 
+    background-color: #e6e6e6; 
+}
+
+#education { 
+    grid-area: education; 
+    background-color: #cce0ff; 
+}
+
+#projects { 
+    grid-area: projects; 
+    background-color: #ffb3b3; 
+}
+
+#experience { 
+    grid-area: experience; 
+    background-color: #b3ffb3; 
+}
+
+#blogs { 
+    grid-area: blogs; 
+    background-color: #ffd966; 
+}
+
+#contact { 
+    grid-area: contact; 
+    background-color: #d9b3ff; 
+}
+
+.profile {
+    text-align: left;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+
+}
+@media only screen and (max-width: 500px) {
+
+    .header-content {
+        display: block;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    .container {
+        grid-template-columns: 1fr; /* Change the grid layout to a single column */
+        grid-template-areas: 
+            "header"
+            "about"
+            "education"
+            "projects"
+            "experience"
+            "blogs"
+            "contact";
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="profile">
+            <img src="https://unsplash.com/photos/VwcAnEozPgU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash" alt="Profile Image">
+            <p>SAI TARUN REDDY PAPPU</p>
+            <p>Full-Stack developer</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </section>
+
+    <section id="blogs">
+        <h2>Blogs</h2>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://github.com/your-github-profile" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+                <a href="https://twitter.com/your-twitter-profile" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

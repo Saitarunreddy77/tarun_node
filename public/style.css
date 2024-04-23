@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr,2fr;
+    grid-template-areas: 
+        "header"
+        "about"
+        "education"
+        "projects"
+        "experience"
+        "blogs"
+        "contact";
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#about { 
+    grid-area: about; 
+    background-color: #e6e6e6; 
+}
+
+#education { 
+    grid-area: education; 
+    background-color: #cce0ff; 
+}
+
+#projects { 
+    grid-area: projects; 
+    background-color: #ffb3b3; 
+}
+
+#experience { 
+    grid-area: experience; 
+    background-color: #b3ffb3; 
+}
+
+#blogs { 
+    grid-area: blogs; 
+    background-color: #ffd966; 
+}
+
+#contact { 
+    grid-area: contact; 
+    background-color: #d9b3ff; 
+}
+
+.profile {
+    text-align: left;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+
+}
+@media only screen and (max-width: 500px) {
+
+    .header-content {
+        display: block;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    .container {
+        grid-template-columns: 1fr; /* Change the grid layout to a single column */
+        grid-template-areas: 
+            "header"
+            "about"
+            "education"
+            "projects"
+            "experience"
+            "blogs"
+            "contact";
+    }
+}
